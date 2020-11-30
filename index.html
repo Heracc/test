@@ -1,26 +1,19 @@
-
 <body>
    <h1>Hello</h1>
    <p>If you are reading this and you dont see any HTML tags, then I did this right!</p>
    <p>https://c.gethopscotch.com/p/11ay1wvwg9</p>
 
    <button onclick="up();">Click Me</button><span id="p"></span>
-<br><br>   
- <h1><script>
+   
+ <script>
    var j = 0;
+   function up() {
+     j += 1;
+     document.querySelector('#p').innerHtml = j;
+   }
    
-   var pointIncrease =1;
-    
-    func up() {
-    var j += pointIncrease
-    }
-    
-     document.querySelector('#p').innerHTML = j;
-   
-    
-    
+  
 
-    </script></h1>
-   <button onclick="pointIncrease = 2;> More points a click </button>
+</script>
    
 </body>
