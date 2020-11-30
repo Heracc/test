@@ -1,3 +1,4 @@
+
 <body>
    <h1>Hello</h1>
    <p>If you are reading this and you dont see any HTML tags, then I did this right!</p>
@@ -6,13 +7,14 @@
    <button onclick="up();">Click Me</button><span id="p"></span>
    
  <script>
-var j = 0;
+   var j = 0;
    function up() {
      j += 1;
+     document.querySelector('#p').innerHtml = j;
    }
    
   
-    document.querySelector('#p').innerText = j;
+
 </script>
    
 </body>
